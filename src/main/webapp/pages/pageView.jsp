@@ -16,13 +16,13 @@
   <meta name="author" content="">
   <title>SB Admin - Start Bootstrap Template</title>
   <!-- Bootstrap core CSS-->
-  <link href="pages/unrestrictedpages/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="pages/unrestricted/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
-  <link href="pages/unrestrictedpages/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="pages/unrestricted/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Page level plugin CSS-->
-  <link href="pages/unrestrictedpages/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="pages/unrestricted/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
-  <link href="pages/unrestrictedpages/css/sb-admin.css" rel="stylesheet">
+  <link href="pages/unrestricted/css/sb-admin.css" rel="stylesheet">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -588,18 +588,18 @@
       </div>
     </div>
     <!-- Bootstrap core JavaScript-->
-    <script src="pages/unrestrictedpages/vendor/jquery/jquery.min.js"></script>
-    <script src="pages/unrestrictedpages/vendor/popper/popper.min.js"></script>
-    <script src="pages/unrestrictedpages/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="pages/unrestricted/vendor/jquery/jquery.min.js"></script>
+    <script src="pages/unrestricted/vendor/popper/popper.min.js"></script>
+    <script src="pages/unrestricted/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Core plugin JavaScript-->
-    <script src="pages/unrestrictedpages/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="pages/unrestricted/vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Page level plugin JavaScript-->
-    <script src="pages/unrestrictedpages/vendor/datatables/jquery.dataTables.js"></script>
-    <script src="pages/unrestrictedpages/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script src="pages/unrestricted/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="pages/unrestricted/vendor/datatables/dataTables.bootstrap4.js"></script>
     <!-- Custom scripts for all pages-->
-    <script src="pages/unrestrictedpages/js/sb-admin.min.js"></script>
+    <script src="pages/unrestricted/js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
-    <script src="pages/unrestrictedpages/js/sb-admin-datatables.min.js"></script>
+    <script src="pages/unrestricted/js/sb-admin-datatables.min.js"></script>
   </div>
 </body>
 </html>

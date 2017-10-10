@@ -12,9 +12,17 @@
         <servlet-name>mainControl</servlet-name>
         <servlet-class>com.mycompany.amtauthenkey.web.mainControl</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>loginControl</servlet-name>
+        <servlet-class>com.mycompany.amtauthenkey.web.loginControl</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>mainControl</servlet-name>
         <url-pattern>/mainControl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginControl</servlet-name>
+        <url-pattern>/loginControl</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

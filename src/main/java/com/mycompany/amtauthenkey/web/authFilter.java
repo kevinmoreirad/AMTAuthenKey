@@ -63,7 +63,7 @@ public class authFilter implements Filter {
          * if username doesnt exist, redirection to login page
          */
         if ( session.getAttribute("username") == null ) {
-             request.getRequestDispatcher( "/pages/login.html").forward( request, response );
+             request.getRequestDispatcher( "/loginControl").forward( request, response );
           } else {
             //if there is a username, the client is connected -> he can acces the site            
             chain.doFilter( request, response );
