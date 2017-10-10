@@ -10,6 +10,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -41,8 +42,27 @@ public class loginControl extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+             //if the login info are null or not in the database, we send to the login page
+         String username = request.getParameter("inputUsername");
+        String password = request.getParameter("inputPassword");
         
-           request.getRequestDispatcher("pages/login.jsp").forward(request, response);              
+        //if the login info are null or not in the database, we send to the login page
+        if((username == null && password == null) || 
+                !loginManager.isOnDataBase(username, password))
+        {
+           request.getRequestDispatcher("pages/login.jsp").forward(request, response); 
+        }
+        else
+        {
+             //getting session from request
+            HttpSession session = request.getSession();
+            session.setAttribute("username", username);
+            session.setAttribute("password", password);
+            
+           request.getRequestDispatcher("pages/pageView.jsp").forward(request, response);  
+        }
+            
+            
     }
 
     /**
@@ -67,7 +87,13 @@ public class loginControl extends HttpServlet {
            request.getRequestDispatcher("pages/login.jsp").forward(request, response); 
         }
         else
-            request.getRequestDispatcher("pages/pageView.jsp").forward(request, response); 
+        {
+             //getting session from request
+            HttpSession session = request.getSession();
+            session.setAttribute("username", username);
+            session.setAttribute("password", password);
+            request.getRequestDispatcher("pages/pageView.jsp").forward(request, response);    
+        }
     }
     /**
      * Returns a short description of the servlet.
